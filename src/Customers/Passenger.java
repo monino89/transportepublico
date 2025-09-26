@@ -22,7 +22,7 @@ public class Passenger extends Person {
     }
     
     public void addTransportService(TransportService transportService){
-        this.passportNumber.add(transportService);
+        this.transportService=transportService;
     }
     
     @Override
