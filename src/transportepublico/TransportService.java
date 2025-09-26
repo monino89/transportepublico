@@ -1,6 +1,6 @@
 
 package transportepublico;
-public class TransportService {
+public abstract class TransportService {
     private int id;
     private String origin;
     private String destination;
@@ -41,7 +41,7 @@ public class TransportService {
     public String getOrigin(){
         return this.origin;
     }
-    public String destination(){
+    public String getDestination(){
         return this.destination;
     }
     public double getPrice(double price){
@@ -49,7 +49,12 @@ public class TransportService {
     }
     @Override
     public String toString(){
-        String str="";
+        String str="The user id is: "+this.id+"\nThe origin is "+this.origin+" and the destination is "+this.destination+"\nThe total is: "+this.price;
         return str;
     }
+    
+    //ABSTRACT
+    
+    public abstract String getServiceInformation();
+    public abstract String getLuggageInformation();
 }
