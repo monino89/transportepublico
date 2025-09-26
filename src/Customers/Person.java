@@ -1,6 +1,6 @@
 
 package Customers;
-import transportepublico.Transportepublico;
+import transportepublico.TransportService;
 
 public class Person {
     private String name;
