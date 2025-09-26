@@ -1,5 +1,5 @@
 
-package transportepublico;
+package transportepublico.Booking;
 public abstract class TransportService {
     private int id;
     private String origin;
