@@ -1,5 +1,8 @@
 
-package transportepublico;
+package transportepublico.Booking;
+
+import transportepublico.Booking.TransportService;
+
 public class Train extends TransportService{
     private String seatType;
     private int wagonNumber;
@@ -33,8 +36,7 @@ public class Train extends TransportService{
     }
     @Override
     public String toString(){
-        super.toString();
-        String str="\nYour seat type is: "+this.seatType+" located on wagon "+this.wagonNumber;
+        String str=super.toString()+"\nYour seat type is: "+this.seatType+" located on wagon "+this.wagonNumber;
         return str;
     }
     @Override

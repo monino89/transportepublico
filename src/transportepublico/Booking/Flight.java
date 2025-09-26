@@ -1,5 +1,8 @@
 
-package transportepublico;
+package transportepublico.Booking;
+
+import transportepublico.Booking.TransportService;
+
 public class Flight extends TransportService{
     private String airline;
     private String seatClass;
@@ -32,8 +35,7 @@ public class Flight extends TransportService{
     }
     @Override
     public String toString(){
-        super.toString();
-        String str="You will be flying with "+this.airline+" in seat class "+this.seatClass;
+        String str=super.toString()+"You will be flying with "+this.airline+" in seat class "+this.seatClass;
         return str;
     }
     @Override

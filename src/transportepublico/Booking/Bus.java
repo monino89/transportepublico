@@ -1,5 +1,8 @@
 
-package transportepublico;
+package transportepublico.Booking;
+
+import transportepublico.Booking.TransportService;
+
 public class Bus extends TransportService{
     private String busCompany;
     private String boardingPoint;
@@ -33,8 +36,7 @@ public class Bus extends TransportService{
     }
     @Override
     public String toString(){
-        super.toString();
-        String str="\nYou boarded the following bus company's bus: "+this.busCompany+" at "+this.boardingPoint;
+        String str=super.toString()+"\nYou boarded the following bus company's bus: "+this.busCompany+" at "+this.boardingPoint;
         return str;
     }
     @Override
