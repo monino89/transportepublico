@@ -49,7 +49,7 @@ public abstract class TransportService {
     }
     @Override
     public String toString(){
-        String str="The user id is: "+this.id+"\nThe origin is "+this.origin+" and the destination is "+this.destination+"\nThe total is: "+this.price;
+        String str="\nThe user id is: "+this.id+"\nThe origin is "+this.origin+" and the destination is "+this.destination+"\nThe total is: $"+this.price;
         return str;
     }
     

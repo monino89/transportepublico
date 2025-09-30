@@ -1,6 +1,6 @@
 
 package Customers;
-import transportepublico.TransportService;
+import transportepublico.Booking.TransportService;
 
 public class Passenger extends Person {
     private String passportNumber;
@@ -27,7 +27,7 @@ public class Passenger extends Person {
     
     @Override
     public String toString(){
-        String str=super.toString()+"";
+        String str=super.toString()+this.transportService.toString();
         return str;
     }
 }
